@@ -3,22 +3,21 @@
 PImage img;
 
 void setup() {
-  size(800, 500);
-  img = loadImage("pumpkins.png");
-  image(img, 0, 0);
+  size(450,450);
+  img = loadImage("Ghost.jpg");
+  image(img,0,0);
 }
 
-void draw() 
+void draw()
 {
-  save("YOURNAME.Halloween.png");
+  //save("MINH.Halloween.png");
 }
 
 void mouseDragged()
 {
   //"Carves" the pumpkins
-  //blendMode optional, might be problematic with a light or white background
-  blendMode(OVERLAY); 
+// blendMode(OVERLAY);
   noStroke();
-  fill(255, 200, 25);
-  ellipse(mouseX, mouseY, 5, 5);
+  fill(0);
+  ellipse(mouseX,mouseY, 7, 7);
 }
