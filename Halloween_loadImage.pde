@@ -1,3 +1,5 @@
+/* @pjs preload="Ghost.jpg"; */
+
 PImage img;
 
 void setup() {
